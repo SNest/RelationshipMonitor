@@ -1,0 +1,9 @@
+D:\Repositories\Main\RelationshipMonitor\RelationshipMonitor.BLL\bin\Debug\RelationshipMonitor.BLL.dll
+D:\Repositories\Main\RelationshipMonitor\RelationshipMonitor.BLL\bin\Debug\RelationshipMonitor.BLL.pdb
+D:\Repositories\Main\RelationshipMonitor\RelationshipMonitor.BLL\bin\Debug\RelationshipMonitor.DAL.dll
+D:\Repositories\Main\RelationshipMonitor\RelationshipMonitor.BLL\bin\Debug\RelationshipMonitor.DAL.pdb
+D:\Repositories\Main\RelationshipMonitor\RelationshipMonitor.BLL\obj\Debug\RelationshipMonitor.BLL.csprojResolveAssemblyReference.cache
+D:\Repositories\Main\RelationshipMonitor\RelationshipMonitor.BLL\obj\Debug\RelationshipMonitor.BLL.dll
+D:\Repositories\Main\RelationshipMonitor\RelationshipMonitor.BLL\obj\Debug\RelationshipMonitor.BLL.pdb
+D:\Repositories\Main\RelationshipMonitor\RelationshipMonitor.BLL\bin\Debug\RelationshipMonitor.BOL.dll
+D:\Repositories\Main\RelationshipMonitor\RelationshipMonitor.BLL\bin\Debug\RelationshipMonitor.BOL.pdb

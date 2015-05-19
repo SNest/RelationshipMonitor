@@ -1,0 +1,4 @@
+D:\Repositories\Main\RelationshipMonitor\RelationshipMonitor.DAL\bin\Debug\RelationshipMonitor.DAL.dll
+D:\Repositories\Main\RelationshipMonitor\RelationshipMonitor.DAL\bin\Debug\RelationshipMonitor.DAL.pdb
+D:\Repositories\Main\RelationshipMonitor\RelationshipMonitor.DAL\obj\Debug\RelationshipMonitor.DAL.dll
+D:\Repositories\Main\RelationshipMonitor\RelationshipMonitor.DAL\obj\Debug\RelationshipMonitor.DAL.pdb

@@ -1,0 +1,4 @@
+D:\Repositories\Main\RelationshipMonitor\RelationshipMonitor.BOL\bin\Debug\RelationshipMonitor.BOL.dll
+D:\Repositories\Main\RelationshipMonitor\RelationshipMonitor.BOL\bin\Debug\RelationshipMonitor.BOL.pdb
+D:\Repositories\Main\RelationshipMonitor\RelationshipMonitor.BOL\obj\Debug\RelationshipMonitor.BOL.dll
+D:\Repositories\Main\RelationshipMonitor\RelationshipMonitor.BOL\obj\Debug\RelationshipMonitor.BOL.pdb
