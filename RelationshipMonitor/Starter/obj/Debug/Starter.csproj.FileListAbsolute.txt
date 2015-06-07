@@ -1,0 +1,16 @@
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\Starter\bin\Debug\Starter.exe.config
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\Starter\bin\Debug\Starter.exe
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\Starter\bin\Debug\Starter.pdb
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\Starter\bin\Debug\EntityFramework.dll
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\Starter\bin\Debug\EntityFramework.SqlServer.dll
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\Starter\bin\Debug\Newtonsoft.Json.dll
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\Starter\bin\Debug\RelationshipMonitor.BOL.dll
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\Starter\bin\Debug\RestSharp.dll
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\Starter\bin\Debug\RelationshipMonitor.BOL.pdb
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\Starter\bin\Debug\EntityFramework.xml
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\Starter\bin\Debug\EntityFramework.SqlServer.xml
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\Starter\bin\Debug\Newtonsoft.Json.xml
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\Starter\bin\Debug\RestSharp.xml
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\Starter\obj\Debug\Starter.csprojResolveAssemblyReference.cache
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\Starter\obj\Debug\Starter.exe
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\Starter\obj\Debug\Starter.pdb

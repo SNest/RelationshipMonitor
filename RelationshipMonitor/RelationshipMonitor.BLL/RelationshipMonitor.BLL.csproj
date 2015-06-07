@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Ninject">
+      <HintPath>..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -39,6 +42,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Business helpers\Abstract\IActivityHelper.cs" />
+    <Compile Include="Business helpers\Abstract\IEntityHelper.cs" />
+    <Compile Include="Business helpers\Abstract\IEventHelper.cs" />
+    <Compile Include="Business helpers\Abstract\IRelationHelper.cs" />
+    <Compile Include="Business helpers\Abstract\IUserHelper.cs" />
+    <Compile Include="Business helpers\Concrete\ActivityHelper.cs" />
+    <Compile Include="Business helpers\Concrete\EventHelper.cs" />
+    <Compile Include="Business helpers\Concrete\RelationHelper.cs" />
+    <Compile Include="Business helpers\Concrete\UserHelper.cs" />
+    <Compile Include="Infrastructure\Bindings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -51,6 +64,10 @@
       <Name>RelationshipMonitor.DAL</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

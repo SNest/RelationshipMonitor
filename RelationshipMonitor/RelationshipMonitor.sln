@@ -3,12 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelationshipMonitor.SL", "RelationshipMonitor.SL\RelationshipMonitor.SL.csproj", "{0FD12382-7F77-4938-A004-5F1FE9086B2D}"
-	ProjectSection(ProjectDependencies) = postProject
-		{99D65E23-E610-4DC5-AAF3-2F5441A42B00} = {99D65E23-E610-4DC5-AAF3-2F5441A42B00}
-		{36487D4D-73E3-4B48-A338-9ECE4A97C7A0} = {36487D4D-73E3-4B48-A338-9ECE4A97C7A0}
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelationshipMonitor.DAL", "RelationshipMonitor.DAL\RelationshipMonitor.DAL.csproj", "{695F382E-F501-44FA-9A3D-12E5D4A6689E}"
 	ProjectSection(ProjectDependencies) = postProject
 		{99D65E23-E610-4DC5-AAF3-2F5441A42B00} = {99D65E23-E610-4DC5-AAF3-2F5441A42B00}
@@ -25,16 +19,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkFolder", "WorkFolder", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelationshipMonitor.PL", "RelationshipMonitor.PL\RelationshipMonitor.PL.csproj", "{9B4CE6D7-1C63-40C1-A75C-C1FD1BEC26EE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelationshipMonitor.SL", "RelationshipMonitor.SL\RelationshipMonitor.SL.csproj", "{ED092232-DD55-4FAF-AA04-98492387ED7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Starter", "Starter\Starter.csproj", "{006E8FD9-F6CE-4C6F-B98D-031FC72B3596}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0FD12382-7F77-4938-A004-5F1FE9086B2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0FD12382-7F77-4938-A004-5F1FE9086B2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0FD12382-7F77-4938-A004-5F1FE9086B2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0FD12382-7F77-4938-A004-5F1FE9086B2D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{695F382E-F501-44FA-9A3D-12E5D4A6689E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{695F382E-F501-44FA-9A3D-12E5D4A6689E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{695F382E-F501-44FA-9A3D-12E5D4A6689E}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -51,6 +45,14 @@ Global
 		{9B4CE6D7-1C63-40C1-A75C-C1FD1BEC26EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B4CE6D7-1C63-40C1-A75C-C1FD1BEC26EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B4CE6D7-1C63-40C1-A75C-C1FD1BEC26EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED092232-DD55-4FAF-AA04-98492387ED7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED092232-DD55-4FAF-AA04-98492387ED7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED092232-DD55-4FAF-AA04-98492387ED7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED092232-DD55-4FAF-AA04-98492387ED7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{006E8FD9-F6CE-4C6F-B98D-031FC72B3596}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{006E8FD9-F6CE-4C6F-B98D-031FC72B3596}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{006E8FD9-F6CE-4C6F-B98D-031FC72B3596}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{006E8FD9-F6CE-4C6F-B98D-031FC72B3596}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
