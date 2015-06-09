@@ -51,7 +51,7 @@
     <Compile Include="Business helpers\Concrete\EventHelper.cs" />
     <Compile Include="Business helpers\Concrete\RelationHelper.cs" />
     <Compile Include="Business helpers\Concrete\UserHelper.cs" />
-    <Compile Include="Infrastructure\Bindings.cs" />
+    <Compile Include="Business helpers\Bindings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -65,7 +65,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

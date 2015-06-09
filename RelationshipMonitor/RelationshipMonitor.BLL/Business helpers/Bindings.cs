@@ -2,7 +2,7 @@
 using RelationshipMonitor.DAL.Repositories.Abstract;
 using RelationshipMonitor.DAL.Repositories.Concrete;
 
-namespace RelationshipMonitor.BLL.Infrastructure
+namespace RelationshipMonitor.BLL.Business_helpers
 {
     class Bindings : NinjectModule
     {

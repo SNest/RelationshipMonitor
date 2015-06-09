@@ -1,0 +1,10 @@
+2015-06-09 15:27:26.6482|INFO|RelationshipMonitor.DAL.Repositories.Concrete.EFUserRepository|User was added to the context
+2015-06-09 15:27:27.0592|INFO|RelationshipMonitor.DAL.Repositories.Concrete.EFUserRepository|User changes was saved to the database
+2015-06-09 15:28:30.3319|INFO|RelationshipMonitor.DAL.Repositories.Concrete.EFUserRepository|User was added to the context
+2015-06-09 15:28:30.6255|INFO|RelationshipMonitor.DAL.Repositories.Concrete.EFUserRepository|User changes was saved to the database
+2015-06-09 15:29:40.3967|INFO|RelationshipMonitor.DAL.Repositories.Concrete.EFUserRepository|User was added to the context
+2015-06-09 15:29:50.8059|INFO|RelationshipMonitor.DAL.Repositories.Concrete.EFUserRepository|User changes was saved to the database
+2015-06-09 16:03:15.1544|INFO|RelationshipMonitor.DAL.Repositories.Concrete.EFUserRepository|User was added to the context
+2015-06-09 16:03:15.4766|INFO|RelationshipMonitor.DAL.Repositories.Concrete.EFUserRepository|User changes was saved to the database
+2015-06-09 16:08:19.0015|INFO|RelationshipMonitor.DAL.Repositories.Concrete.EFUserRepository|User was added to the context
+2015-06-09 16:08:19.3113|INFO|RelationshipMonitor.DAL.Repositories.Concrete.EFUserRepository|User changes was saved to the database

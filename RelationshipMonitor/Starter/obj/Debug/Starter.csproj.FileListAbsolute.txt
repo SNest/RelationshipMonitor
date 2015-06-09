@@ -14,3 +14,11 @@ D:\Repositories\RelationshipMonitor\RelationshipMonitor\Starter\bin\Debug\RestSh
 D:\Repositories\RelationshipMonitor\RelationshipMonitor\Starter\obj\Debug\Starter.csprojResolveAssemblyReference.cache
 D:\Repositories\RelationshipMonitor\RelationshipMonitor\Starter\obj\Debug\Starter.exe
 D:\Repositories\RelationshipMonitor\RelationshipMonitor\Starter\obj\Debug\Starter.pdb
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\Starter\bin\Debug\RelationshipMonitor.BLL.dll
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\Starter\bin\Debug\Ninject.dll
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\Starter\bin\Debug\RelationshipMonitor.DAL.dll
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\Starter\bin\Debug\NLog.dll
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\Starter\bin\Debug\RelationshipMonitor.BLL.pdb
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\Starter\bin\Debug\Ninject.xml
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\Starter\bin\Debug\RelationshipMonitor.DAL.pdb
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\Starter\bin\Debug\NLog.xml

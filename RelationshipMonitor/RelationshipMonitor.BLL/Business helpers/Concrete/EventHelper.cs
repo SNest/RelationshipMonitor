@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using Ninject;
 using RelationshipMonitor.BLL.Business_helpers.Abstract;
-using RelationshipMonitor.BLL.Infrastructure;
 using RelationshipMonitor.BOL.Entities;
 using RelationshipMonitor.DAL.Repositories.Abstract;
 

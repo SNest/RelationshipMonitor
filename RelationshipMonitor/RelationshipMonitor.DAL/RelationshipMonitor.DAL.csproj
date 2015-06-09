@@ -55,7 +55,7 @@
     <Compile Include="Repositories\Abstract\IRelationRepository.cs" />
     <Compile Include="Repositories\Abstract\IUserRepository.cs" />
     <Compile Include="Repositories\Concrete\EFActivityRepository.cs" />
-    <Compile Include="Repositories\Concrete\EFDbContext.cs" />
+    <Compile Include="Repositories\EFDbContext.cs" />
     <Compile Include="Repositories\Concrete\EFEventRepository.cs" />
     <Compile Include="Repositories\Concrete\EFRelationRepository.cs" />
     <Compile Include="Repositories\Concrete\EFUserRepository.cs" />
@@ -68,7 +68,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <Content Include="NLog.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

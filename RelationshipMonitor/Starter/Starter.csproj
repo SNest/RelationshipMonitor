@@ -60,10 +60,16 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\RelationshipMonitor.BLL\RelationshipMonitor.BLL.csproj">
+      <Project>{36487d4d-73e3-4b48-a338-9ece4a97c7a0}</Project>
+      <Name>RelationshipMonitor.BLL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\RelationshipMonitor.BOL\RelationshipMonitor.BOL.csproj">
       <Project>{99d65e23-e610-4dc5-aaf3-2f5441a42b00}</Project>
       <Name>RelationshipMonitor.BOL</Name>

@@ -12,30 +12,37 @@ namespace Starter
         static void Main()
         {
             Console.ReadKey();
-            CreateUser(new User() { FirstName = "IVAN", LastName = "TIHOMIROV", Email = "sfga", Password = "asdg" });
-            //GetUserById(5);
-            //User u = GetUserById(7);
-            //u.FirstName = "Lesha";
-            //EditUser(u);
+            Console.WriteLine("ok");
+
+            //UserHelper uh = new UserHelper();
+
+            //uh.Create(new User() { FirstName = "K", LastName = "D", Email = "S", Password = "R", Role = "Dd", Sex = "CC" });
+
+            CreateUser(new User() { FirstName = "K", LastName = "D", Email = "S", Password = "R", Role = "Dd", Sex = "CC" });
+            //GetUserById(1);
+            User u = GetUserById(1);
+            u.FirstName = "Lesha";
+            EditUser(u);
 
 
             //User use = GetUserById(10);
             //DeleteUser(use.Id);
 
             //CreateUser(new User() { FirstName = "IVAN", LastName = "TIHOMIROV", Email = "sfga", Password = "asdg"});
+            Console.WriteLine("press something");
             Console.ReadKey();
         }
 
         static void CreateUser(User user)
         {
-            RestRequest request = new RestRequest("api/user/create", Method.PUT) { RequestFormat = DataFormat.Json };
+            RestRequest request = new RestRequest("api/user/create", Method.POST) { RequestFormat = DataFormat.Json };
             request.AddBody(user);
             client.Execute(request);
         }
 
         static private void EditUser(User user)
         {
-            RestRequest request = new RestRequest("api/user/edit", Method.POST) { RequestFormat = DataFormat.Json };
+            RestRequest request = new RestRequest("api/user/edit", Method.PUT) { RequestFormat = DataFormat.Json };
             request.RequestFormat = DataFormat.Json;
             request.AddBody(user);
             client.Execute(request);
@@ -56,7 +63,7 @@ namespace Starter
             return JsonConvert.DeserializeObject<User>(response.Content);
         }
 
-       
+
         static IEnumerable<User> GetAllUsers()
         {
             RestRequest request = new RestRequest("UserHelperApi", Method.GET);

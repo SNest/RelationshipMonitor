@@ -1,0 +1,2 @@
+2015-06-09 16:41:33.6226|ERROR|RelationshipMonitor.DAL.Repositories.Concrete.EFUserRepository|User was not added to the context
+2015-06-09 16:46:00.7626|ERROR|RelationshipMonitor.DAL.Repositories.Concrete.EFUserRepository|User was not added to the context

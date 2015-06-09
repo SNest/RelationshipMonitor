@@ -1,0 +1,6 @@
+2015-06-09 16:54:47.4597|TRACE|RelationshipMonitor.DAL.Repositories.Concrete.EFUserRepository|   at System.Data.Entity.Utilities.Check.NotNull[T](T value, String parameterName)
+   at System.Data.Entity.DbSet`1.Add(TEntity entity)
+   at RelationshipMonitor.DAL.Repositories.Concrete.EFUserRepository.Create(User user) in d:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.DAL\Repositories\Concrete\EFUserRepository.cs:line 25
+2015-06-09 18:01:06.4896|TRACE|RelationshipMonitor.DAL.Repositories.Concrete.EFUserRepository|   at System.Data.Entity.Utilities.Check.NotNull[T](T value, String parameterName)
+   at System.Data.Entity.DbSet`1.Add(TEntity entity)
+   at RelationshipMonitor.DAL.Repositories.Concrete.EFUserRepository.Create(User user) in d:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.DAL\Repositories\Concrete\EFUserRepository.cs:line 25
