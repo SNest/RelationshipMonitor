@@ -103,7 +103,6 @@
     <Content Include="Areas\Security\Views\_ViewStart.cshtml" />
     <Content Include="Areas\Security\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\Security\Views\Login\Index.cshtml" />
-    <Content Include="Areas\Security\Views\Registration\Index.cshtml" />
     <Content Include="Areas\Admin\Views\_ViewStart.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\User\Views\_ViewStart.cshtml" />
@@ -116,6 +115,13 @@
     <Content Include="Areas\User\Views\Event\List.cshtml" />
     <Content Include="Areas\Admin\Views\User\List.cshtml" />
     <Content Include="Areas\User\Views\Relation\List.cshtml" />
+    <Content Include="Areas\Admin\Views\User\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\User\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\User\Delete.cshtml" />
+    <Content Include="Areas\Security\Views\Registration\Profile.cshtml" />
+    <Content Include="Areas\Security\Views\Registration\Edit.cshtml" />
+    <Content Include="Areas\Security\Views\Registration\SignUp.cshtml" />
+    <None Include="Properties\PublishProfiles\RelationshipMonitor.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\Chart.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -141,10 +147,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Activity.cs" />
-    <Compile Include="Models\Event.cs" />
-    <Compile Include="Models\Relation.cs" />
-    <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -178,6 +180,10 @@
     <ProjectReference Include="..\RelationshipMonitor.BLL\RelationshipMonitor.BLL.csproj">
       <Project>{36487d4d-73e3-4b48-a338-9ece4a97c7a0}</Project>
       <Name>RelationshipMonitor.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RelationshipMonitor.BOL\RelationshipMonitor.BOL.csproj">
+      <Project>{99d65e23-e610-4dc5-aaf3-2f5441a42b00}</Project>
+      <Name>RelationshipMonitor.BOL</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

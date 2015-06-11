@@ -4,11 +4,6 @@
     ViewBag.Title = "Index";
 }
 
-@if (TempData["Msg"] != null)
-{
-    <h4>@TempData["Msg"].ToString();</h4>
-}
-
 @using (Html.BeginForm("SignIn", "Login", FormMethod.Post)) 
 {
     @Html.AntiForgeryToken()

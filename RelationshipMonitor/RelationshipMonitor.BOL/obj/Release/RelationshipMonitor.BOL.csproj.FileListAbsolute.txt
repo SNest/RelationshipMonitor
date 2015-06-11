@@ -1,0 +1,4 @@
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.BOL\bin\Release\RelationshipMonitor.BOL.dll
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.BOL\bin\Release\RelationshipMonitor.BOL.pdb
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.BOL\obj\Release\RelationshipMonitor.BOL.dll
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.BOL\obj\Release\RelationshipMonitor.BOL.pdb

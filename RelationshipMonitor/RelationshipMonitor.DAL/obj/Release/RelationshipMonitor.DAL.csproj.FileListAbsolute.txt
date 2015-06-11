@@ -1,0 +1,15 @@
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.DAL\bin\Release\NLog.config
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.DAL\bin\Release\RelationshipMonitor.DAL.dll.config
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.DAL\bin\Release\RelationshipMonitor.DAL.dll
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.DAL\bin\Release\RelationshipMonitor.DAL.pdb
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.DAL\bin\Release\EntityFramework.dll
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.DAL\bin\Release\EntityFramework.SqlServer.dll
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.DAL\bin\Release\NLog.dll
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.DAL\bin\Release\RelationshipMonitor.BOL.dll
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.DAL\bin\Release\RelationshipMonitor.BOL.pdb
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.DAL\bin\Release\EntityFramework.xml
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.DAL\bin\Release\EntityFramework.SqlServer.xml
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.DAL\bin\Release\NLog.xml
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.DAL\obj\Release\RelationshipMonitor.DAL.csprojResolveAssemblyReference.cache
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.DAL\obj\Release\RelationshipMonitor.DAL.dll
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.DAL\obj\Release\RelationshipMonitor.DAL.pdb

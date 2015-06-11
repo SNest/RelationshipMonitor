@@ -21,10 +21,13 @@
 
                 @if (User.Identity.IsAuthenticated)
                 {
-                    @Html.ActionLink("My Relations", "List", "Relation", new {area = "User"}, new {@class = "navbar-brand"})
-                    @Html.ActionLink("My Events", "List", "Event", new {area = "User"}, new {@class = "navbar-brand"})
-                    @Html.ActionLink("My Activities", "List", "Activity", new {area = "User"}, new {@class = "navbar-brand"})
-
+                    if (User.IsInRole("User"))
+                    {
+                        @Html.ActionLink("Profile", "Profile", "Registration", new {area = "User"}, new {@class = "navbar-brand"})
+                        @Html.ActionLink("Relations", "List", "Relation", new {area = "User"}, new {@class = "navbar-brand"})
+                        @Html.ActionLink("Events", "List", "Event", new {area = "User"}, new {@class = "navbar-brand"})
+                        @Html.ActionLink("Activities", "List", "Activity", new {area = "User"}, new {@class = "navbar-brand"})
+                    }
                     if (User.IsInRole("Admin"))
                     {
                         @Html.ActionLink("Manage users", "List", "User", new { area = "Admin" }, new { @class = "navbar-brand" })

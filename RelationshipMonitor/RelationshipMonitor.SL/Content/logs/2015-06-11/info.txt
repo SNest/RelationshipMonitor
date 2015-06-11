@@ -52,3 +52,5 @@
 2015-06-11 22:08:44.7960|INFO|RelationshipMonitor.DAL.Repositories.Concrete.EFActivityRepository|Activity was got from the context
 2015-06-11 22:10:01.8041|INFO|RelationshipMonitor.DAL.Repositories.Concrete.EFActivityRepository|Activity was got from the context
 2015-06-11 22:11:53.9020|INFO|RelationshipMonitor.DAL.Repositories.Concrete.EFActivityRepository|Activity was got from the context
+2015-06-11 22:19:22.6899|INFO|RelationshipMonitor.DAL.Repositories.Concrete.EFActivityRepository|Activity was got from the context
+2015-06-11 22:45:43.3449|INFO|RelationshipMonitor.DAL.Repositories.Concrete.EFActivityRepository|Activity was got from the context

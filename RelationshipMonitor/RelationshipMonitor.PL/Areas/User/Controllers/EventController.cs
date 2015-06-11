@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Newtonsoft.Json;
-using RelationshipMonitor.PL.Models;
+using RelationshipMonitor.BOL.Entities;
 using RestSharp;
 
 namespace RelationshipMonitor.PL.Areas.User.Controllers

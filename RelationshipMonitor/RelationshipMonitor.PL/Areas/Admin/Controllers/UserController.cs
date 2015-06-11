@@ -1,106 +1,75 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Collections.Generic;
 using System.Web.Mvc;
-using Newtonsoft.Json;
-using RestSharp;
+using RelationshipMonitor.BLL.Business_helpers.Concrete;
 
 namespace RelationshipMonitor.PL.Areas.Admin.Controllers
 {
     [Authorize(Roles = "Admin")]
     public class UserController : Controller
     {
-        private static RestClient client;
+        private readonly UserHelper userHelper;
         public UserController()
         {
-            client = new RestClient("http://localhost:19099/API%20services/Concrete/UserHelperService.svc") { FollowRedirects = false };
-        }
-
-        // GET: Admin/User
-        public ActionResult Index()
-        {
-            return View();
+            userHelper = new UserHelper();
         }
 
         public ViewResult List()
         {
-            RestRequest request = new RestRequest("api/user/getall", Method.GET);
-            IRestResponse response = client.Execute(request);
-            List<Models.User> model = JsonConvert.DeserializeObject<IEnumerable<Models.User>>(response.Content).ToList();
-
-            return View(model);
+            IEnumerable<BOL.Entities.User> users = userHelper.GetAll();
+            return View(users);
         }
 
         // GET: Admin/User/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            BOL.Entities.User user = userHelper.GetById(id);
+            return View(user);
         }
 
-        // GET: Admin/User/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: Admin/User/Create
-        [HttpPost]
-        public ActionResult Create(FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add insert logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
+       
         // GET: Admin/User/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            BOL.Entities.User user = userHelper.GetById(id);
+            return View(user);
         }
 
         // POST: Admin/User/Edit/5
         [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
+        public ActionResult Edit(int id, BOL.Entities.User user)
         {
             try
             {
-                // TODO: Add update logic here
+                userHelper.Edit(user);
 
-                return RedirectToAction("Index");
+                return RedirectToAction("List");
             }
             catch
             {
-                return View();
+                return View("List");
             }
         }
 
         // GET: Admin/User/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            BOL.Entities.User user = userHelper.GetById(id);
+            return View(user);
         }
 
         // POST: Admin/User/Delete/5
         [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
+        public ActionResult Delete(int id, BOL.Entities.User user)
         {
             try
             {
-                // TODO: Add delete logic here
+                userHelper.Delete(id);
 
-                return RedirectToAction("Index");
+                return RedirectToAction("List");
             }
             catch
             {
-                return View();
+                return View("List");
             }
         }
     }

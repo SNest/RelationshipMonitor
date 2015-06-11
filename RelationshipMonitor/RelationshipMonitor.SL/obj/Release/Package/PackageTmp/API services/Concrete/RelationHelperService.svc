@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="RelationshipMonitor.SL.API_services.Concrete.RelationHelperService" CodeBehind="RelationHelperService.svc.cs" %>

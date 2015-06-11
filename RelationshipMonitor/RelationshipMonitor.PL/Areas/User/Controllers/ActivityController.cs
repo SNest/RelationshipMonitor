@@ -1,10 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
-using Newtonsoft.Json;
 using RelationshipMonitor.BLL.Business_helpers.Concrete;
 using RestSharp;
-using RelationshipMonitor.PL.Models;
+using RelationshipMonitor.BOL.Entities;
 
 namespace RelationshipMonitor.PL.Areas.User.Controllers
 {
@@ -12,9 +11,13 @@ namespace RelationshipMonitor.PL.Areas.User.Controllers
     public class ActivityController : Controller
     {
         private static RestClient client;
+        private UserHelper userHelper;
+        private ActivityHelper activityHelper;
         public ActivityController()
         {
             client = new RestClient("http://localhost:19099/API%20services/Concrete/ActivityHelperService.svc") { FollowRedirects = false };
+            userHelper = new UserHelper();
+            activityHelper = new ActivityHelper();
         }
         
         // GET: User/Activity
@@ -25,11 +28,8 @@ namespace RelationshipMonitor.PL.Areas.User.Controllers
 
         public ViewResult List()
         {
-            RestRequest request = new RestRequest("api/activity/getall", Method.GET);
-            IRestResponse response = client.Execute(request);
-            IEnumerable<Activity> model = JsonConvert.DeserializeObject<IEnumerable<Activity>>(response.Content);
-
-            return View(model);
+            IEnumerable<Activity> activities = activityHelper.GetAll().Where(x => userHelper.GetById((int)x.CreatorId).Email == System.Web.HttpContext.Current.User.Identity.Name);
+            return View(activities);
         }
 
         // GET: User/Activity/Details/5

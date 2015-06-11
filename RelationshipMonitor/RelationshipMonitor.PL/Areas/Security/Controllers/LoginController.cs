@@ -7,13 +7,14 @@ namespace RelationshipMonitor.PL.Areas.Security.Controllers
     [AllowAnonymous]
     public class LoginController : Controller
     {
+       
         // GET: Security/Login
         public ActionResult Index()
         {
             return View();
         }
 
-        public ActionResult SignIn(Models.User user)
+        public ActionResult SignIn(BOL.Entities.User user)
         {
             try
             {
@@ -24,18 +25,16 @@ namespace RelationshipMonitor.PL.Areas.Security.Controllers
                 }
                 else
                 {
-                    TempData["Msg"] = "Login failed ";
-                    return RedirectToAction("Index");
+                   return RedirectToAction("Index");
                 }
             }
             catch (Exception e)
             {
-                TempData["Msg"] = "Login failed " + e.Message;
                 return RedirectToAction("Index");
             }
         }
 
-        public ActionResult SignOut(Models.User user)
+        public ActionResult SignOut(BOL.Entities.User user)
         {
             FormsAuthentication.SignOut();
             return RedirectToAction("Index", "Home", new { area = "Common" });
