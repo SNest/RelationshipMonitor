@@ -6,7 +6,7 @@
 
 <h2>SignUp</h2>
 
-@using (Html.BeginForm())
+@using (Html.BeginForm("SignUp", "Registration", FormMethod.Post))
 {
     @Html.AntiForgeryToken()
 

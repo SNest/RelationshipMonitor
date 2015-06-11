@@ -24,16 +24,9 @@ namespace RelationshipMonitor.PL.Areas.Security.Controllers
         {
             try
             {
-                if (Membership.ValidateUser(user.Email, user.Password))
-                {
-                    user.Role = "User";
-                    userHelper.Create(user);
-                    return RedirectToAction("Index", "Home", new {area = "Common"});
-                }
-                else
-                {
-                    return RedirectToAction("Index", "Home", new { area = "Common" });
-                }
+                user.Role = "User";
+                userHelper.Create(user);
+                return RedirectToAction("Index", "Home", new {area = "Common"});
             }
             catch (Exception e)
             {

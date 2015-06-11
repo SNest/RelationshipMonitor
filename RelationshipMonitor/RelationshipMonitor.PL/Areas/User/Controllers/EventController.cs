@@ -1,106 +1,98 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
-using Newtonsoft.Json;
+using RelationshipMonitor.BLL.Business_helpers.Concrete;
 using RelationshipMonitor.BOL.Entities;
-using RestSharp;
 
 namespace RelationshipMonitor.PL.Areas.User.Controllers
 {
     [Authorize(Roles = "User")]
     public class EventController : Controller
     {
-        private static RestClient client;
+        private readonly UserHelper userHelper;
+        private readonly EventHelper eHelper;
         public EventController()
         {
-            client = new RestClient("http://localhost:19099/API%20services/Concrete/EventHelperService.svc") { FollowRedirects = false };
-        }
-        // GET: User/Event
-        public ActionResult Index()
-        {
-            return View();
+            userHelper = new UserHelper();
+            eHelper = new EventHelper();
         }
 
-        public ViewResult List()
-        {
-            RestRequest request = new RestRequest("api/event/getall", Method.GET);
-            IRestResponse response = client.Execute(request);
-            List<Event> model = JsonConvert.DeserializeObject<IEnumerable<Event>>(response.Content).ToList();
-
-            return View(model);
-        }
-
-        // GET: User/Event/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
-        }
-
-        // GET: User/Event/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: User/Event/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(Event e)
         {
             try
             {
-                // TODO: Add insert logic here
-
-                return RedirectToAction("Index");
+                eHelper.Create(e);
+                return RedirectToAction("List");
             }
             catch
             {
-                return View();
+                return RedirectToAction("List");
             }
         }
 
-        // GET: User/Event/Edit/5
+        public ViewResult List()
+        {
+            IEnumerable<Event> events = eHelper.GetAll().Where(x => userHelper.GetById((int)x.CreatorId).Email == System.Web.HttpContext.Current.User.Identity.Name);
+            return View(events);
+        }
+
+        // GET: Admin/Event/Details/5
+        public ActionResult Details(int id)
+        {
+            BOL.Entities.Event e = eHelper.GetById(id);
+            return View(e);
+        }
+
+
+        // GET: Admin/Event/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            Event e = eHelper.GetById(id);
+            return View(e);
         }
 
-        // POST: User/Event/Edit/5
+        // POST: Admin/Event/Edit/5
         [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
+        public ActionResult Edit(int id, BOL.Entities.Event e)
         {
             try
             {
-                // TODO: Add update logic here
+                eHelper.Edit(e);
 
-                return RedirectToAction("Index");
+                return RedirectToAction("List");
             }
             catch
             {
-                return View();
+                return View("List");
             }
         }
 
-        // GET: User/Event/Delete/5
+        // GET: Admin/Event/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            BOL.Entities.Event e = eHelper.GetById(id);
+            return View(e);
         }
 
-        // POST: User/Event/Delete/5
+        // POST: Admin/Event/Delete/5
         [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
+        public ActionResult Delete(int id, BOL.Entities.Event e)
         {
             try
             {
-                // TODO: Add delete logic here
+                eHelper.Delete(id);
 
-                return RedirectToAction("Index");
+                return RedirectToAction("List");
             }
             catch
             {
-                return View();
+                return View("List");
             }
         }
     }

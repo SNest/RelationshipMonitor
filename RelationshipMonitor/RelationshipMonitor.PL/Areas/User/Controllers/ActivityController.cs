@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
 using RelationshipMonitor.BLL.Business_helpers.Concrete;
@@ -10,20 +11,31 @@ namespace RelationshipMonitor.PL.Areas.User.Controllers
     [Authorize(Roles = "User")]
     public class ActivityController : Controller
     {
-        private static RestClient client;
-        private UserHelper userHelper;
-        private ActivityHelper activityHelper;
+        private readonly UserHelper userHelper;
+        private readonly ActivityHelper activityHelper;
         public ActivityController()
         {
-            client = new RestClient("http://localhost:19099/API%20services/Concrete/ActivityHelperService.svc") { FollowRedirects = false };
             userHelper = new UserHelper();
             activityHelper = new ActivityHelper();
         }
-        
-        // GET: User/Activity
-        public ActionResult Index()
+
+        public ActionResult Create()
         {
             return View();
+        }
+
+        [HttpPost]
+        public ActionResult Create(Activity activity)
+        {
+            try
+            {
+                activityHelper.Create(activity);
+                return RedirectToAction("List");
+            }
+            catch (Exception e)
+            {
+                return RedirectToAction("List");
+            }
         }
 
         public ViewResult List()
@@ -32,76 +44,60 @@ namespace RelationshipMonitor.PL.Areas.User.Controllers
             return View(activities);
         }
 
-        // GET: User/Activity/Details/5
+        // GET: Admin/Activity/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            BOL.Entities.Activity activity = activityHelper.GetById(id);
+            return View(activity);
         }
 
-        // GET: User/Activity/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
 
-        // POST: User/Activity/Create
-        [HttpPost]
-        public ActionResult Create(FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add insert logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: User/Activity/Edit/5
+        // GET: Admin/Activity/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            Activity activity = activityHelper.GetById(id);
+            return View(activity);
         }
 
-        // POST: User/Activity/Edit/5
+        // POST: Admin/Activity/Edit/5
         [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
+        public ActionResult Edit(int id, BOL.Entities.Activity activity)
         {
             try
             {
-                // TODO: Add update logic here
+                activityHelper.Edit(activity);
 
-                return RedirectToAction("Index");
+                return RedirectToAction("List");
             }
             catch
             {
-                return View();
+                return View("List");
             }
         }
 
-        // GET: User/Activity/Delete/5
+        // GET: Admin/Activity/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            BOL.Entities.Activity activity = activityHelper.GetById(id);
+            return View(activity);
         }
 
-        // POST: User/Activity/Delete/5
+        // POST: Admin/Activity/Delete/5
         [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
+        public ActionResult Delete(int id, BOL.Entities.Activity activity)
         {
             try
             {
-                // TODO: Add delete logic here
+                activityHelper.Delete(id);
 
-                return RedirectToAction("Index");
+                return RedirectToAction("List");
             }
             catch
             {
-                return View();
+                return View("List");
             }
         }
+       
+        
     }
 }

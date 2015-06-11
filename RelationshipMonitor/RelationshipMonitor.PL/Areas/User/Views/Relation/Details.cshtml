@@ -1,0 +1,50 @@
+﻿@model RelationshipMonitor.BOL.Entities.Relation
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Relation</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Type)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StartDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StartDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Partner1Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Partner1Id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Partner2Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Partner2Id)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.RelationId }) |
+    @Html.ActionLink("Back to List", "List")
+</p>
