@@ -4,6 +4,7 @@ namespace RelationshipMonitor.PL.Models
 {
     public sealed class User
     {
+        public int UserId { get; set; }
         [Required]
         public string FirstName { get; set; }
         [Required]

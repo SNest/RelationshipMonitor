@@ -9,12 +9,6 @@ namespace RelationshipMonitor.BOL.Entities
         [Key]
         [Required]
         public int RelationId { get; set; }
-
-        //[ForeignKey("User1")]
-
-
-        //[ForeignKey("User2")]
-
         [Required]
         public string Type { get; set; }
         [Required]
@@ -22,10 +16,12 @@ namespace RelationshipMonitor.BOL.Entities
 
 
         public int? Partner1Id { get; set; }
+        public int? Partner2Id { get; set; }
+
+        [NotMapped]
         [ForeignKey("Partner1Id")]
         public User Partner1 { get; set; }
-
-        public int? Partner2Id { get; set; }
+        [NotMapped]
         [ForeignKey("Partner2Id")]
         public User Partner2 { get; set; }
 

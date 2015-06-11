@@ -1,4 +1,4 @@
-﻿@model IEnumerable<RelationshipMonitor.BOL.Entities.User>
+﻿@model IEnumerable<RelationshipMonitor.PL.Models.User>
 
 @{
     ViewBag.Title = "List";
@@ -24,12 +24,6 @@
             @Html.DisplayNameFor(model => model.Email)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Password)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Photo)
-        </th>
-        <th>
             @Html.DisplayNameFor(model => model.Role)
         </th>
         <th></th>
@@ -48,12 +42,6 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Email)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Password)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Photo)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Role)

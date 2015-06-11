@@ -22,3 +22,4 @@ D:\Repositories\RelationshipMonitor\RelationshipMonitor\Starter\bin\Debug\Relati
 D:\Repositories\RelationshipMonitor\RelationshipMonitor\Starter\bin\Debug\Ninject.xml
 D:\Repositories\RelationshipMonitor\RelationshipMonitor\Starter\bin\Debug\RelationshipMonitor.DAL.pdb
 D:\Repositories\RelationshipMonitor\RelationshipMonitor\Starter\bin\Debug\NLog.xml
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\Starter\bin\Debug\NLog.config

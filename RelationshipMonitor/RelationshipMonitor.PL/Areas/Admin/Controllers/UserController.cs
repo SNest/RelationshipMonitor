@@ -8,6 +8,7 @@ using RestSharp;
 
 namespace RelationshipMonitor.PL.Areas.Admin.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class UserController : Controller
     {
         private static RestClient client;

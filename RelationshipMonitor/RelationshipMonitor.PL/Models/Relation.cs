@@ -5,6 +5,7 @@ namespace RelationshipMonitor.PL.Models
 {
     public class Relation
     {
+        public int RelationId { get; set; }
         [Required]
         public string Type { get; set; }
         [Required]

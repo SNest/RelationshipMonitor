@@ -9,6 +9,7 @@ using RestSharp;
 
 namespace RelationshipMonitor.PL.Areas.User.Controllers
 {
+    [Authorize(Roles = "User")]
     public class EventController : Controller
     {
         private static RestClient client;

@@ -19,14 +19,24 @@
                 </button>
                 @Html.ActionLink("Relationship monitor", "Index", "Home", new { area = "Common" }, new { @class = "navbar-brand" })
 
-                @Html.ActionLink("My Relations", "List", "Relation", new { area = "User" }, new { @class = "navbar-brand" })
-                @Html.ActionLink("My Events", "List", "Event", new { area = "User" }, new { @class = "navbar-brand" })
-                @Html.ActionLink("My Activities", "List", "Activity", new { area = "User" }, new { @class = "navbar-brand" })
-                
+                @if (User.Identity.IsAuthenticated)
+                {
+                    @Html.ActionLink("My Relations", "List", "Relation", new {area = "User"}, new {@class = "navbar-brand"})
+                    @Html.ActionLink("My Events", "List", "Event", new {area = "User"}, new {@class = "navbar-brand"})
+                    @Html.ActionLink("My Activities", "List", "Activity", new {area = "User"}, new {@class = "navbar-brand"})
 
-                @Html.ActionLink("Sign Up", "SignUp", "Registration", new { area = "Security" }, new { @class = "navbar-brand" })
-                @Html.ActionLink("Sign In", "SignIn", "Login", new { area = "Security" }, new { @class = "navbar-brand" })
-                @Html.ActionLink("Sign Out", "SignOut", "Login", new { area = "Security" }, new { @class = "navbar-brand" })
+                    if (User.IsInRole("Admin"))
+                    {
+                        @Html.ActionLink("Manage users", "List", "User", new { area = "Admin" }, new { @class = "navbar-brand" })
+                    }
+
+                    @Html.ActionLink("Sign Out", "SignOut", "Login", new {area = "Security"}, new {@class = "navbar-brand"})
+                }
+                else
+                {
+                    @Html.ActionLink("Sign Up", "SignUp", "Registration", new { area = "Security" }, new { @class = "navbar-brand" })
+                    @Html.ActionLink("Sign In", "SignIn", "Login", new { area = "Security" }, new { @class = "navbar-brand" })
+                }
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">

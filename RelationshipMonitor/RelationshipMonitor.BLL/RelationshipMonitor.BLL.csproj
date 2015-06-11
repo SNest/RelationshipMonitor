@@ -63,6 +63,7 @@
     <Compile Include="Business helpers\Concrete\UserHelper.cs" />
     <Compile Include="Infrastructure\Bindings.cs" />
     <Compile Include="Infrastructure\RelationshipMonitorMembershipProvider.cs" />
+    <Compile Include="Infrastructure\RelationshipMonitorRoleProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

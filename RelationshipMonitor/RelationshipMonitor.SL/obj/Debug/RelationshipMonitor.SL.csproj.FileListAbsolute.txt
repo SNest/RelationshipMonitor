@@ -24,3 +24,4 @@ D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.SL\b
 D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.SL\bin\Newtonsoft.Json.xml
 D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.SL\bin\EntityFramework.SqlServer.dll
 D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.SL\bin\EntityFramework.SqlServer.xml
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.SL\bin\NLog.config

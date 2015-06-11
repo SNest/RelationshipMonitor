@@ -3,15 +3,34 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Newtonsoft.Json;
+using RelationshipMonitor.PL.Models;
+using RestSharp;
 
 namespace RelationshipMonitor.PL.Areas.User.Controllers
 {
+    [Authorize(Roles = "User")]
     public class RelationController : Controller
     {
         // GET: User/Relation
+        private static RestClient client;
+        public RelationController()
+        {
+            client = new RestClient("http://localhost:19099/API%20services/Concrete/RelationHelperService.svc") { FollowRedirects = false };
+        }
+        // GET: User/Event
         public ActionResult Index()
         {
             return View();
+        }
+
+        public ViewResult List()
+        {
+            RestRequest request = new RestRequest("api/relation/getall", Method.GET);
+            IRestResponse response = client.Execute(request);
+            List<Relation> model = JsonConvert.DeserializeObject<IEnumerable<Relation>>(response.Content).ToList();
+
+            return View(model);
         }
 
         // GET: User/Relation/Details/5

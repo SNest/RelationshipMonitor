@@ -6,3 +6,4 @@ D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.BOL\
 D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.BOL\bin\Debug\RelationshipMonitor.BOL.pdb
 D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.BOL\obj\Debug\RelationshipMonitor.BOL.dll
 D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.BOL\obj\Debug\RelationshipMonitor.BOL.pdb
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.BOL\obj\Debug\RelationshipMonitor.BOL.csprojResolveAssemblyReference.cache

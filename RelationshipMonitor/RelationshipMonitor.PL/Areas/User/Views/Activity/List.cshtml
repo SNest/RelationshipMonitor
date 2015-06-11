@@ -1,10 +1,62 @@
-﻿@model IEnumerable<RelationshipMonitor.BOL.Entities.Activity>
+﻿@using RelationshipMonitor.BLL.Business_helpers.Concrete
+@model IEnumerable<RelationshipMonitor.PL.Models.Activity>
+
+@{ UserHelper userHelper = new UserHelper(); }
 
 @{
     ViewBag.Title = "List";
 }
 
-<h2>List</h2>
+<script src="~/Scripts/Chart.js"></script>
+<div style="width: 100%">
+    <div>
+        <canvas id="canvas" height="150" width="600"></canvas>
+    </div>
+</div>
+@{
+    string[] dateArray = new string[Model.Count()];
+    string[] estimateArray = new string[Model.Count()];
+    int i = 0;
+    foreach (var item in Model)
+    {
+
+        dateArray[i] = item.Date.ToString();
+        estimateArray[i++] = item.Estimate.ToString();
+    }
+}
+<script>
+
+    var dates = @Html.Raw(Json.Encode(dateArray));
+    var estimates = @Html.Raw(Json.Encode(estimateArray));
+
+    var lineChartData =
+        {
+            labels : dates,
+
+            datasets: [
+                {
+                    label: "My Second dataset",
+                    fillColor : "rgba(151,187,205,0.2)",
+                    strokeColor : "rgba(151,187,205,1)",
+                    pointColor : "rgba(151,187,205,1)",
+                    pointStrokeColor : "#fff",
+                    pointHighlightFill : "#fff",
+                    pointHighlightStroke : "rgba(151,187,205,1)",
+                    data : estimates
+                }
+            ]
+
+        }
+
+    window.onload = function(){
+        var ctx = document.getElementById("canvas").getContext("2d");
+        window.myLine = new Chart(ctx).Line(lineChartData, {
+            responsive: true
+        });
+    }
+
+
+</script>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -21,10 +73,10 @@
             @Html.DisplayNameFor(model => model.Date)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.CreatorId)
+            @Html.DisplayName("Addressee first name")
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.RecipientId)
+            @Html.DisplayName("Addressee first name")
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Estimate)
@@ -32,32 +84,33 @@
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Type)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Description)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Date)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.CreatorId)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.RecipientId)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Estimate)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ActivityId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ActivityId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ActivityId })
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Type)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => userHelper.GetById((int)item.RecipientId).FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => userHelper.GetById((int)item.RecipientId).LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Estimate)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.ActivityId }) |
+                @Html.ActionLink("Details", "Details", new { id = item.ActivityId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.ActivityId })
+            </td>
+        </tr>
+    }
 
 </table>

@@ -5,6 +5,7 @@ namespace RelationshipMonitor.PL.Models
 {
     public class Event
     {
+        public int EventId { get; set; }
         [Required]
         public string Type { get; set; }
         [Required]

@@ -1,14 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 using Newtonsoft.Json;
+using RelationshipMonitor.BLL.Business_helpers.Concrete;
 using RestSharp;
 using RelationshipMonitor.PL.Models;
 
 namespace RelationshipMonitor.PL.Areas.User.Controllers
 {
+    [Authorize(Roles = "User")]
     public class ActivityController : Controller
     {
         private static RestClient client;
@@ -27,7 +27,7 @@ namespace RelationshipMonitor.PL.Areas.User.Controllers
         {
             RestRequest request = new RestRequest("api/activity/getall", Method.GET);
             IRestResponse response = client.Execute(request);
-            List<Activity> model = JsonConvert.DeserializeObject<IEnumerable<Activity>>(response.Content).ToList();
+            IEnumerable<Activity> model = JsonConvert.DeserializeObject<IEnumerable<Activity>>(response.Content);
 
             return View(model);
         }

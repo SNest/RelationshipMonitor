@@ -1,0 +1,4 @@
+2015-06-11 18:57:04.6836|INFO|RelationshipMonitor.DAL.Repositories.Concrete.EFUserRepository|User was got from the context
+2015-06-11 18:57:13.6987|INFO|RelationshipMonitor.DAL.Repositories.Concrete.EFUserRepository|User was got from the context
+2015-06-11 18:57:13.7447|INFO|RelationshipMonitor.DAL.Repositories.Concrete.EFUserRepository|User was got from the context
+2015-06-11 18:57:19.3736|INFO|RelationshipMonitor.DAL.Repositories.Concrete.EFUserRepository|User was got from the context

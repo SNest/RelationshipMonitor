@@ -1,0 +1,51 @@
+﻿@model IEnumerable<RelationshipMonitor.PL.Models.Relation>
+
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Type)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StartDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Partner1Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Partner2Id)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Type)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StartDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Partner1Id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Partner2Id)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.RelationId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.RelationId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.RelationId })
+        </td>
+    </tr>
+}
+
+</table>

@@ -21,9 +21,10 @@ namespace RelationshipMonitor.BOL.Entities
         public int? RecipientId { get; set; }
         public int Estimate { get; set; }
 
-
+        [NotMapped]
         [ForeignKey("CreatorId")]
         public virtual User User1 { get; set; }
+        [NotMapped]
         [ForeignKey("RecipientId")]
         public virtual User User2 { get; set; }
     }
