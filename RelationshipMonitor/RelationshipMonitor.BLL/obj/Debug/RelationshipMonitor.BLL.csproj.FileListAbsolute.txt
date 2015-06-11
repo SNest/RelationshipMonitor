@@ -23,3 +23,6 @@ D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.BLL\
 D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.BLL\bin\Debug\NLog.config
 D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.BLL\bin\Debug\NLog.dll
 D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.BLL\bin\Debug\NLog.xml
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.BLL\bin\Debug\RelationshipMonitor.BLL.dll.config
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.BLL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.BLL\bin\Debug\EntityFramework.SqlServer.xml

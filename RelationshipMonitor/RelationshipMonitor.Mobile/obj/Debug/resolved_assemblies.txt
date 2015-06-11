@@ -1,0 +1,3 @@
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.Mobile\bin\Debug\RelationshipMonitor.Mobile.dll
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\packages\Newtonsoft.Json.6.0.8\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\packages\restsharp-105.0.1.0\restsharp-105.0.1.0\lib\android\RestSharp.MonoDroid.dll

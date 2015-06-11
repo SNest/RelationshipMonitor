@@ -8,8 +8,6 @@ namespace RelationshipMonitor.DAL.Repositories
         public EFDbContext()
             : base("EFDbConnection")
         {
-            Configuration.LazyLoadingEnabled = true;
-            Configuration.ProxyCreationEnabled = false;
         }
         public DbSet<User> Users { get; set; }
         public DbSet<Relation> Relations { get; set; }

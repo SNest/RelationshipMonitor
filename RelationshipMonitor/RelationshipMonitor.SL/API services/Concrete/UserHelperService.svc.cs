@@ -1,11 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Web.Http;
-using Newtonsoft.Json;
 using RelationshipMonitor.BLL.Business_helpers.Concrete;
 using RelationshipMonitor.BOL.Entities;
 using RelationshipMonitor.SL.API_services.Abstract;
-
 
 namespace RelationshipMonitor.SL.API_services.Concrete
 {

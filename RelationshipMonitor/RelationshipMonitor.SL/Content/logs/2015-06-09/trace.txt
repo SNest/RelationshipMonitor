@@ -4,3 +4,17 @@
 2015-06-09 18:01:06.4896|TRACE|RelationshipMonitor.DAL.Repositories.Concrete.EFUserRepository|   at System.Data.Entity.Utilities.Check.NotNull[T](T value, String parameterName)
    at System.Data.Entity.DbSet`1.Add(TEntity entity)
    at RelationshipMonitor.DAL.Repositories.Concrete.EFUserRepository.Create(User user) in d:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.DAL\Repositories\Concrete\EFUserRepository.cs:line 25
+2015-06-09 22:03:49.4352|TRACE|RelationshipMonitor.DAL.Repositories.Concrete.EFUserRepository|   at System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   at System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   at System.Data.Entity.Internal.LazyInternalContext.<InitializeDatabase>b__4(InternalContext c)
+   at System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeDatabase()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.ActOnSet(Action action, EntityState newState, Object entity, String methodName)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Add(Object entity)
+   at System.Data.Entity.DbSet`1.Add(TEntity entity)
+   at RelationshipMonitor.DAL.Repositories.Concrete.EFUserRepository.Create(User user) in d:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.DAL\Repositories\Concrete\EFUserRepository.cs:line 25

@@ -1,0 +1,4 @@
+RelationshipMonitor.Mobile.MainActivity, RelationshipMonitor.Mobile;md54c473545fe94ee211ef98d36e1b81dec.MainActivity
+RelationshipMonitor.Mobile.MainActivity, RelationshipMonitor.Mobile, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md54c473545fe94ee211ef98d36e1b81dec.MainActivity
+RelationshipMonitor.Mobile.MainActivity;md54c473545fe94ee211ef98d36e1b81dec.MainActivity
+relationshipmonitor.mobile.MainActivity;md54c473545fe94ee211ef98d36e1b81dec.MainActivity

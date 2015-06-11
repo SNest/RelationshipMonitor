@@ -1,0 +1,17 @@
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.Mobile\bin\Debug\RelationshipMonitor.Mobile.dll
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.Mobile\bin\Debug\RelationshipMonitor.Mobile.pdb
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.Mobile\bin\Debug\RelationshipMonitor.Mobile.dll.mdb
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.Mobile\bin\Debug\RelationshipMonitor.Mobile.apk
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.Mobile\bin\Debug\RelationshipMonitor.Mobile-Signed.apk
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.Mobile\obj\Debug\RelationshipMonitor.Mobile.csprojResolveAssemblyReference.cache
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.Mobile\obj\Debug\RelationshipMonitor.Mobile.dll
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.Mobile\obj\Debug\RelationshipMonitor.Mobile.pdb
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.Mobile\obj\Debug\android\bin\RelationshipMonitor.Mobile.apk
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.Mobile\obj\Debug\res\layout\main.xml
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.Mobile\obj\Debug\res\values\strings.xml
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.Mobile\obj\Debug\res\drawable\icon.png
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.Mobile\obj\Debug\R.cs.flag
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.Mobile\obj\Debug\uploadflags.txt
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.Mobile\bin\Debug\RestSharp.MonoDroid.dll
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.Mobile\bin\Debug\Newtonsoft.Json.dll
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.Mobile\bin\Debug\Newtonsoft.Json.xml

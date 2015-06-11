@@ -44,3 +44,15 @@ D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.PL\b
 D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.PL\bin\EntityFramework.SqlServer.dll
 D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.PL\bin\EntityFramework.xml
 D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.PL\bin\EntityFramework.SqlServer.xml
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.PL\bin\RelationshipMonitor.BLL.dll
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.PL\bin\Ninject.dll
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.PL\bin\RelationshipMonitor.DAL.dll
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.PL\bin\NLog.dll
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.PL\bin\RelationshipMonitor.BLL.pdb
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.PL\bin\Ninject.xml
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.PL\bin\RelationshipMonitor.DAL.pdb
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.PL\bin\NLog.xml
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.PL\bin\Newtonsoft.Json.dll
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.PL\bin\RestSharp.dll
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.PL\bin\Newtonsoft.Json.xml
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.PL\bin\RestSharp.xml
