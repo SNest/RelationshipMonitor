@@ -9,8 +9,9 @@
 }
 
 <script src="~/Scripts/Chart.js"></script>
-<div style="width: 100%">
+<div style="width: 100%" class="canvas">
     <div>
+        <canvas height="50" width="600"></canvas>
         <canvas id="canvas" height="150" width="600"></canvas>
     </div>
 </div>
@@ -36,13 +37,13 @@
 
             datasets: [
                 {
-                    label: "My Second dataset",
-                    fillColor : "rgba(151,187,205,0.2)",
-                    strokeColor : "rgba(151,187,205,1)",
-                    pointColor : "rgba(151,187,205,1)",
+                    label: "Activities",
+                    fillColor : "rgba(0,188,140,0.2)",
+                    strokeColor : "rgba(0,188,140,1)",
+                    pointColor : "rgba(0,188,140,1)",
                     pointStrokeColor : "#fff",
                     pointHighlightFill : "#fff",
-                    pointHighlightStroke : "rgba(151,187,205,1)",
+                    pointHighlightStroke : "rgba(0,188,140,1)",
                     data : estimates
                 }
             ]

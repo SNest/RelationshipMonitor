@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
-    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
-    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css"/>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
     <script src="~/Scripts/modernizr-2.6.2.js"></script>
 </head>
 <body>
@@ -21,10 +21,13 @@
 
                 @if (User.Identity.IsAuthenticated)
                 {
-                    @Html.ActionLink("My Relations", "List", "Relation", new {area = "User"}, new {@class = "navbar-brand"})
-                    @Html.ActionLink("My Events", "List", "Event", new {area = "User"}, new {@class = "navbar-brand"})
-                    @Html.ActionLink("My Activities", "List", "Activity", new {area = "User"}, new {@class = "navbar-brand"})
-
+                    if (User.IsInRole("User"))
+                    {
+                        @Html.ActionLink("Profile", "Profile", "Registration", new {area = "Security"}, new {@class = "navbar-brand"})
+                        @Html.ActionLink("Relations", "List", "Relation", new {area = "User"}, new {@class = "navbar-brand"})
+                        @Html.ActionLink("Events", "List", "Event", new {area = "User"}, new {@class = "navbar-brand"})
+                        @Html.ActionLink("Activities", "List", "Activity", new {area = "User"}, new {@class = "navbar-brand"})
+                    }
                     if (User.IsInRole("Admin"))
                     {
                         @Html.ActionLink("Manage users", "List", "User", new { area = "Admin" }, new { @class = "navbar-brand" })
@@ -49,7 +52,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; Kharkiv @DateTime.Now.Year - Sergey's Nestertsov coursework</p>
         </footer>
     </div>
 

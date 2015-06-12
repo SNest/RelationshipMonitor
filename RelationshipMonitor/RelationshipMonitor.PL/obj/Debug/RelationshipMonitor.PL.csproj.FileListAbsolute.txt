@@ -56,3 +56,4 @@ D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.PL\b
 D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.PL\bin\RestSharp.dll
 D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.PL\bin\Newtonsoft.Json.xml
 D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.PL\bin\RestSharp.xml
+D:\Repositories\RelationshipMonitor\RelationshipMonitor\RelationshipMonitor.PL\bin\NLog.config

@@ -1,10 +1,59 @@
-﻿@model IEnumerable<RelationshipMonitor.PL.Models.Event>
+﻿@model IEnumerable<RelationshipMonitor.BOL.Entities.Event>
 
 @{
     ViewBag.Title = "List";
 }
 
-<h2>List</h2>
+<script src="~/Scripts/Chart.js"></script>
+<div style="width: 100%" class="canvas">
+    <div>
+        <canvas height="50" width="600"></canvas>
+        <canvas id="canvas" height="150" width="600"></canvas>
+    </div>
+</div>
+@{
+    string[] dateArray = new string[Model.Count()];
+    string[] estimateArray = new string[Model.Count()];
+    int i = 0;
+    foreach (var item in Model)
+    {
+        dateArray[i] = item.Date.ToString("d", System.Globalization.CultureInfo.InvariantCulture);
+        estimateArray[i++] = item.Estimate.ToString();
+    }
+}
+<script>
+
+    var dates = @Html.Raw(Json.Encode(dateArray));
+    var estimates = @Html.Raw(Json.Encode(estimateArray));
+
+    var lineChartData =
+        {
+            labels : dates,
+
+            datasets: [
+                {
+                    label: "Activities",
+                    fillColor : "rgba(0,188,140,0.2)",
+                    strokeColor : "rgba(0,188,140,1)",
+                    pointColor : "rgba(0,188,140,1)",
+                    pointStrokeColor : "#fff",
+                    pointHighlightFill : "#fff",
+                    pointHighlightStroke : "rgba(0,188,140,1)",
+                    data : estimates
+                }
+            ]
+
+        }
+
+    window.onload = function(){
+        var ctx = document.getElementById("canvas").getContext("2d");
+        window.myLine = new Chart(ctx).Line(lineChartData, {
+            responsive: true
+        });
+    }
+
+
+</script>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -17,9 +66,7 @@
         <th>
             @Html.DisplayNameFor(model => model.Title)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Description)
-        </th>
+
         <th>
             @Html.DisplayNameFor(model => model.Date)
         </th>
@@ -45,9 +92,6 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Title)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Description)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Date)
